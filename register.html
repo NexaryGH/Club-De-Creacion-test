@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Registro</h1>
+        <form id="registerForm">
+            <div class="input-group">
+                <input type="text" id="reg-username" placeholder="Nombre de usuario" required>
+                <i class="fas fa-user"></i>
+            </div>
+            <div class="input-group">
+                <input type="email" id="reg-email" placeholder="Correo electrónico" required>
+                <i class="fas fa-envelope"></i>
+            </div>
+            <div class="input-group">
+                <input type="password" id="reg-password" placeholder="Contraseña" required>
+                <i class="fas fa-lock"></i>
+            </div>
+            <button type="submit">Registrarse</button>
+        </form>
+        <a href="login.html" class="btn-link">¿Ya tienes cuenta? Inicia sesión</a>
+        <div id="reg-error" class="error-message" style="display: none;"></div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

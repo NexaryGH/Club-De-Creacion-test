@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Iniciar Sesión</h1>
+        <form id="loginForm">
+            <div class="input-group">
+                <input type="text" id="username_or_email" placeholder="Nombre de usuario o correo" required>
+                <i class="fas fa-user"></i>
+            </div>
+            <div class="input-group">
+                <input type="password" id="password" placeholder="Contraseña" required>
+                <i class="fas fa-lock"></i>
+            </div>
+            <button type="submit">Ingresar</button>
+        </form>
+        <a href="register.html" class="btn-link">¿No tienes cuenta? Regístrate</a>
+        <div id="login-error" class="error-message" style="display: none;"></div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

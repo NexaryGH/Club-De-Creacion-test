@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subir Mensaje y Archivo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="welcome-wrapper">
+                <h2>Hola, <span id="username">Invitado</span></h2>
+            </div>
+            <a href="#" id="logout-btn" class="logout-btn">
+                <i class="fas fa-sign-out-alt"></i> Cerrar Sesión
+            </a>
+        </div>
+
+        <div id="confirmationModal" class="confirmation-modal">
+            <div class="confirmation-box">
+                <h3>¿Estás seguro de que quieres cerrar sesión?</h3>
+                <div class="buttons">
+                    <button class="confirm" id="confirmLogout">Sí</button>
+                    <button class="cancel" id="cancelLogout">No</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h1><i class="fas fa-comment-dots"></i> Publicar Mensaje</h1>
+            <form id="postForm">
+                <div class="form-group">
+                    <div style="position: relative;">
+                        <textarea name="message" placeholder="Escribe tu mensaje aquí..."></textarea>
+                        <label for="file" class="file-attach-label">
+                            <i class="fas fa-paperclip"></i>
+                            <input type="file" name="file" id="file" accept="image/*,video/*,.pdf,.doc,.docx">
+                        </label>
+                    </div>
+                </div>
+                <button type="submit"><i class="fas fa-paper-plane"></i> Publicar</button>
+            </form>
+            <a href="messages.html" class="btn-link"><i class="fas fa-comments"></i> Ver Mensajes</a>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
